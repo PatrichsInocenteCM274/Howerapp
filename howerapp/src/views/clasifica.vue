@@ -327,7 +327,7 @@ export default {
   .clasifica2{
       margin: 0;
     
-   background-image: url(https://images.unsplash.com/photo-1580440174847-8eef6e5beb72?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzQ2fHxqb2J8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  // background-image: url(https://images.unsplash.com/photo-1580440174847-8eef6e5beb72?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzQ2fHxqb2J8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
   .noseve{
     display: none;
     }
