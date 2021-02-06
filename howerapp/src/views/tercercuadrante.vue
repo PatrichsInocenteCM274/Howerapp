@@ -244,7 +244,7 @@ export default {
     display: none;
 }
 .seve{
-    display: ruby;
+    display: "";
 }
 .title3{
       text-align: center;

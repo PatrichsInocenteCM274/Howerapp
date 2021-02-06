@@ -268,7 +268,7 @@ export default {
     display: none;
 }
 .seve{
-    display: ruby;
+    display: "";
 }
 .chat-box,
 .chat-box-list {

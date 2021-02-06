@@ -332,7 +332,7 @@ export default {
     display: none;
     }
     .seve{
-    display: ruby;
+    display: "";
     }
   }
    .drag{
