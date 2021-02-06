@@ -187,12 +187,12 @@ export default {
            
               this.nombre=res.data[0].nombre;
           })
-          axios.post("http://howerapp.herokuapp.com/gettask","username=" + Vue.$cookies.get("usuario")+"&clasificacion=3")
+          axios.post("https://howerapp.herokuapp.com/gettask","username=" + Vue.$cookies.get("usuario")+"&clasificacion=3")
           .then(res => {
               this.gettask_nodrag=res.data;
               console.log(this.gettask_nodrag);
           })
-                    axios.post("http://howerapp.herokuapp.com/gettask","username=" + Vue.$cookies.get("usuario")+"&clasificacion=3")
+                    axios.post("https://howerapp.herokuapp.com/gettask","username=" + Vue.$cookies.get("usuario")+"&clasificacion=3")
           .then(res1 => {
               this.gettask_drag=res1.data;
               console.log(this.gettask_drag);
@@ -213,7 +213,7 @@ export default {
         },
         delega(idx){
           console.log(idx)
-          axios.post("http://howerapp.herokuapp.com/deltask","username=" + Vue.$cookies.get("usuario")+"&task="+this.gettask_drag[idx].task)
+          axios.post("https://howerapp.herokuapp.com/deltask","username=" + Vue.$cookies.get("usuario")+"&task="+this.gettask_drag[idx].task)
           .then(res => {
               console.log(res.data);
               this.iniciar();

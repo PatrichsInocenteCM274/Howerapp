@@ -233,14 +233,14 @@ export default {
               this.nombre=res.data[0].nombre;
               
           })
-          axios.post("http://howerapp.herokuapp.com/gettask","username=" + Vue.$cookies.get("usuario")+"&clasificacion=nuevo")
+          axios.post("https://howerapp.herokuapp.com/gettask","username=" + Vue.$cookies.get("usuario")+"&clasificacion=nuevo")
           .then(res => {
               this.gettask_nodrag=res.data;
               this.longitud_tareas=res.data.length
               console.log(this.gettask_nodrag);
               console.log(this.longitud_tareas)
           })
-          axios.post("http://howerapp.herokuapp.com/gettask","username=" + Vue.$cookies.get("usuario")+"&clasificacion=nuevo")
+          axios.post("https://howerapp.herokuapp.com/gettask","username=" + Vue.$cookies.get("usuario")+"&clasificacion=nuevo")
           .then(res1 => {
               this.gettask_drag=res1.data;
               console.log(this.gettask_drag);
@@ -291,7 +291,7 @@ export default {
             this.clasificacion=4;
           }
         }
-        axios.post("http://howerapp.herokuapp.com/clasificar","username=" + Vue.$cookies.get("usuario")+"&task="+this.gettask_drag[idx].task+"&clasificacion="+this.clasificacion)
+        axios.post("https://howerapp.herokuapp.com/clasificar","username=" + Vue.$cookies.get("usuario")+"&task="+this.gettask_drag[idx].task+"&clasificacion="+this.clasificacion)
           .then(res1 => {
               console.log(res1.data);
           })
