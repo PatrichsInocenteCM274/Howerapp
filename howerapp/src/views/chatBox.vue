@@ -188,7 +188,7 @@ export default {
         }else{
         if(this.visionhora=='seve'){
             
-            axios.post("http://howerapp.herokuapp.com/addtask","username="+Vue.$cookies.get("usuario")+"&task="+this.form.tarea+"&fecha="+this.form.fecha+"&hora="+this.form.hora+"&categoria="+this.form.categoria)
+            axios.post("https://howerapp.herokuapp.com/addtask","username="+Vue.$cookies.get("usuario")+"&task="+this.form.tarea+"&fecha="+this.form.fecha+"&hora="+this.form.hora+"&categoria="+this.form.categoria)
             .then(data =>{
             console.log("username="+Vue.$cookies.get("usuario")+"&task="+this.form.tarea+"&fecha="+this.form.fecha+"&hora="+this.form.hora+"&categoria="+this.form.categoria)
             console.log(data);

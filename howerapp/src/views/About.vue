@@ -91,7 +91,7 @@ export default {
         },
         backup(){
              console.log("hola")
-             window.location.href ="http://howerapp.herokuapp.com/downbackup?username="+Vue.$cookies.get("usuario")
+             window.location.href ="https://howerapp.herokuapp.com/downbackup?username="+Vue.$cookies.get("usuario")
         },
 
     }

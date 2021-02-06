@@ -84,7 +84,7 @@ export default {
         },
         guardar(){
             this.form.token = localStorage.getItem("token");
-            axios.post("http://howerapp.herokuapp.com/addtask","username=pepito@web.onion"+"&task="+this.form.tarea+"&fecha="+this.form.fecha)
+            axios.post("https://howerapp.herokuapp.com/addtask","username=pepito@web.onion"+"&task="+this.form.tarea+"&fecha="+this.form.fecha)
             .then(data =>{
             console.log("username=pepito@web.onion"+"&task="+this.form.tarea+"&fecha="+this.form.fecha)
             console.log(data);

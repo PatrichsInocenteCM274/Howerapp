@@ -57,7 +57,7 @@ export default {
           usr : this.usuario,
           pas: this.password
         };
-        axios.post('http://howerapp.herokuapp.com/register', "usr="+this.usuario+"&pas="+this.password+"&nombre="+this.nombre+"&apellido="+this.apellido)
+        axios.post('https://howerapp.herokuapp.com/register', "usr="+this.usuario+"&pas="+this.password+"&nombre="+this.nombre+"&apellido="+this.apellido)
         .then( data =>{
            console.log(json);
            console.log(data);
@@ -95,7 +95,7 @@ export default {
     }
 
 .registro {
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRShZ6oYV7eyYpomTfxlk0BOe7F31hIRHmyGQ&usqp=CAU);
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRShZ6oYV7eyYpomTfxlk0BOe7F31hIRHmyGQ&usqp=CAU");
 }
 
 body {                                                                                                                                                                                                
