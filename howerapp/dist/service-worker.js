@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.f874980081514b662f02ca1b68a6c959.js"
+  "/precache-manifest.8aaf21339dc17f3fb400a954913b4f51.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "howerapp"});
